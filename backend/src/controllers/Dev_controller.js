@@ -29,7 +29,7 @@ module.exports = {
             techs: techsArray,
             location
         });
-    
+        console.log('added')
         return res.json(devAdded)
     },
 
