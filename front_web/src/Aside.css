@@ -6,11 +6,13 @@ aside {
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
     border-radius: 8px;
     padding: 30px 20px;
+    position: absolute;
 }
 
 @media (max-width: 1000px){
     aside {
         align-self: center;
+        position: relative;
     }
 }
 aside strong {
