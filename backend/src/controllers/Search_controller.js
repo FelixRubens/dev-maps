@@ -4,6 +4,7 @@ const stringAsArray = require('../utils/stringAsArray.js');
 module.exports = {
     async index(req, res){
         const { latitude, longitude, techs } = req.query
+        console.log(techs)
         const techsAsArray = stringAsArray(techs);
 
         const devs = await Dev.find({
@@ -21,6 +22,6 @@ module.exports = {
             }
         })
 
-        return res.json({devs})
+        return res.json(devs)
     }
 }
